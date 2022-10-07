@@ -1,6 +1,6 @@
 {
   "name": "@gotomts/eslint-config-acme",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
