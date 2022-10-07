@@ -9,6 +9,14 @@
   "files": [
     "dist/**"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:gotomts/example-turborepo.git",
+    "directory": "packages/acme-core"
+  },
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
@@ -24,8 +32,5 @@
     "react": "^18.1.0",
     "tsup": "^5.10.1",
     "typescript": "^4.5.3"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

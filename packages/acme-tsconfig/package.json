@@ -4,6 +4,11 @@
   "private": true,
   "license": "MIT",
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:gotomts/example-turborepo.git",
+    "directory": "packages/acme-tsconfig"
   }
 }
