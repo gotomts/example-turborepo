@@ -27,7 +27,7 @@ jobs:
       - name: Creating .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
-            //https://npm.pkg.github.com/:_authToken=$BOT_GITHUB_TOKEN
+            //npm.pkg.github.com/:_authToken=BOT_GITHUB_TOKEN
           EOF
         env:
           NPM_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
