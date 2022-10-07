@@ -1,5 +1,11 @@
 # @gotomts/eslint-config-acme
 
+## 0.1.1
+
+### Patch Changes
+
+- Update Test
+
 ## 0.1.0
 
 ### Minor Changes
