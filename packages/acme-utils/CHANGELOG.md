@@ -1,4 +1,4 @@
-# @acme/utils
+# @gotomts/utils
 
 ## 0.0.1
 

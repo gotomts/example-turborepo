@@ -1,4 +1,4 @@
-# @acme/tsconfig
+# @gotomts/tsconfig
 
 ## 0.0.1
 
