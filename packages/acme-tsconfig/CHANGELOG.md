@@ -1,5 +1,11 @@
 # @gotomts/tsconfig
 
+## 0.1.3
+
+### Patch Changes
+
+- test
+
 ## 0.1.2
 
 ### Patch Changes

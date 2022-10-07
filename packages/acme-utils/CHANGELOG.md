@@ -1,5 +1,11 @@
 # @gotomts/utils
 
+## 0.1.4
+
+### Patch Changes
+
+- test
+
 ## 0.1.3
 
 ### Patch Changes
