@@ -1,4 +1,4 @@
-# eslint-config-acme
+# @gotomts/eslint-config-acme
 
 ## 0.0.1
 

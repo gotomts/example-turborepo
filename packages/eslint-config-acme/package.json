@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-acme",
+  "name": "@gotomts/eslint-config-acme",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:gotomts/example-turborepo.git",
-    "directory": "packages/acme-tsconfig"
+    "url": "https://github.com/gotomts/example-turborepo.git",
+    "directory": "packages/eslint-config-acme"
   },
   "dependencies": {
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "7.29.4",
-    "eslint-config-turbo": "latest"
+    "eslint-config-turbo": "^0.0.4",
+    "eslint-plugin-react": "7.29.4"
   }
 }
