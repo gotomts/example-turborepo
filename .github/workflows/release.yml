@@ -33,6 +33,13 @@ jobs:
         env:
           BOT_GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
 
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact
+          path: |
+            .npmrc
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
@@ -42,13 +49,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_CONFIG_USERCONFIG: $HOME/.npmrc
-
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: artifact
-          path: |
-            .npmrc
 
       - name: Send a Slack notification if a publish happens
         if: steps.changesets.outputs.published == 'true'
