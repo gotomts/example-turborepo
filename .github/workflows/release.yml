@@ -26,10 +26,11 @@ jobs:
 
       - name: Creating .npmrc
         run: |
-          cat << EOF > "$HOME/.npmrc"
+          cat << EOF > ".npmrc"
             @gotomts:registry=https://npm.pkg.github.com
             //npm.pkg.github.com/:_authToken=$BOT_GITHUB_TOKEN
           EOF
+          ls -la
         env:
           BOT_GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
 
@@ -38,7 +39,7 @@ jobs:
         with:
           name: artifact
           path: |
-            $HOME/.npmrc
+            .npmrc
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
